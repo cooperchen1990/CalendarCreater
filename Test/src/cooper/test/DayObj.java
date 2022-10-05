@@ -7,4 +7,5 @@ public class DayObj {
     int workTime;
     boolean isHoliday;
     String description;
+    boolean valid = true;
 }

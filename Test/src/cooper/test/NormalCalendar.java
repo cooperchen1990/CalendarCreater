@@ -9,6 +9,7 @@ public class NormalCalendar {
     LocalDate endDay;
     ArrayList<LocalDate> holidayList;
     ArrayList<LocalDate> cancelHolidayList;
+    final int WORKTIME= 8;
 
     public NormalCalendar(LocalDate starDay, LocalDate endDay, ArrayList<LocalDate> holidayList, ArrayList<LocalDate> cancelHolidayList) {
         this.starDay = starDay;
@@ -22,7 +23,9 @@ public class NormalCalendar {
         while (!starDay.isAfter(endDay)){
             DayObj dayObj = new DayObj();
             dayObj.localDate = starDay;
+            dayObj.workTime = ;
 
+            starDay.plusDays(1);
         }
 
 
